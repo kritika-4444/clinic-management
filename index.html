@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clinic Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+</head>
+<body>
+<h1>Clinic Management System</h1>
+
+<div id="form-section">
+    <h2>Enter Patient Details</h2>
+    <input type="text" id="patientName" placeholder="Patient Name" required><br>
+    <input type="text" id="problem" placeholder="Problem" required><br>
+    <input type="text" id="doctor" placeholder="Doctor Assigned" required><br>
+    <button onclick="submitPatient()">Submit</button>
+</div>
+
+<script src="firebase.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
